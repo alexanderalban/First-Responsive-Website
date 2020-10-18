@@ -1,139 +1,135 @@
 body {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 header {
-    background-color: rgb(43,205,192);
-    color: white;
-    grid-area: header;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 18pt;
+  background-color: rgb(43, 205, 192);
+  color: white;
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 18pt;
 }
 
-h1, h2 {
-    font-weight: normal;
-    font-family: 'Inria Serif', serif;
+h1,
+h2 {
+  font-weight: normal;
+  font-family: "Inria Serif", serif;
 }
 
 h2 {
-    font-size: 30pt;
-    margin-bottom: 0;
-    margin-top: 10pt;
+  font-size: 30pt;
+  margin-bottom: 0;
+  margin-top: 10pt;
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .sec1 {
-    grid-area: sec1;
-
+  grid-area: sec1;
 }
 
 .sec2 {
-    grid-area: sec2;
+  grid-area: sec2;
 }
 
 .sec3 {
-    grid-area: sec3
+  grid-area: sec3;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 260pt 260pt 260pt;
-    grid-template-rows: 280pt 280pt;
-    grid-template-areas: 
-        "header header header"
-        "main main main";
+  display: grid;
+  grid-template-columns: 260pt 260pt 260pt;
+  grid-template-rows: 280pt 280pt;
+  grid-template-areas:
+    "header header header"
+    "main main main";
 }
 
 .main-container {
-    display: grid;
-    grid-template-columns: 260pt 260pt 260pt;
-    grid-template-areas:
-        "sec1 sec2 sec3";
+  display: grid;
+  grid-template-columns: 260pt 260pt 260pt;
+  grid-template-areas: "sec1 sec2 sec3";
 }
 
 section {
-    color: white;
-    background-color: rgb(27,27,27);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    
+  color: white;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
-    max-width: 130pt;
+  max-width: 130pt;
 }
 
 .longbox {
-    padding-bottom: 23pt;
-    padding-left: 135pt;
-    border: none;
+  padding-bottom: 23pt;
+  padding-left: 135pt;
+  border: none;
 }
 
 #bluebox {
-    background-color: rgb(51,168,221);
+  background-color: rgb(51, 168, 221);
 }
 
 #orangebox {
-    background-color: rgb(244,103,49);
+  background-color: rgb(244, 103, 49);
 }
 
 #greenbox {
-    background-color: rgb(43,205,192);
+  background-color: rgb(43, 205, 192);
 }
 
 @media (max-width: 576px) {
-    .container {
-        display: grid;
-        grid-template-columns: 400pt;
-        grid-template-rows: 310pt 280pt 280pt 280pt;
-        grid-template-areas: 
-        "header"
-        "main"
-        "main"
-        "main";
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 400pt;
+    grid-template-rows: 310pt 280pt 280pt 280pt;
+    grid-template-areas:
+      "header"
+      "main"
+      "main"
+      "main";
+  }
 
-    .main-container {
-        display: grid;
-        grid-template-columns: 400pt;
-        grid-template-rows: 280pt 280pt 280pt;
-        grid-template-areas:
-        "sec1"
-        "sec2"
-        "sec3";
+  .main-container {
+    display: grid;
+    grid-template-columns: 400pt;
+    grid-template-rows: 280pt 280pt 280pt;
+    grid-template-areas:
+      "sec1"
+      "sec2"
+      "sec3";
+  }
 
-    }
+  header {
+    background-color: rgb(51, 168, 221);
+    font-size: xx-large;
+  }
 
-    header {
-        background-color: rgb(51,168,221);
-        font-size: xx-large;
-    }
+  p {
+    font-weight: bold;
+  }
 
-    p {
-        font-weight: bold;
-    }
+  h2 {
+    font-weight: bold;
+  }
 
-    h2 {
-        font-weight: bold;
-    }
+  h1 {
+    max-width: 300pt;
+  }
 
-    h1 {
-        max-width: 300pt;
-        
-    }
-
-    section {
-        background-color: rgb(247,245,246);
-        color: rgb(1,0,0);
-    }
+  section {
+    background-color: rgb(247, 245, 246);
+    color: rgb(1, 0, 0);
+  }
 }
