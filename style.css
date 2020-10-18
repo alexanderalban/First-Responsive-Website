@@ -43,8 +43,8 @@ main {
 
 .container {
   display: grid;
-  grid-template-columns: 260pt 260pt 260pt;
-  grid-template-rows: 280pt 280pt;
+  grid-template-columns: repeat(3, minmax(100pt, 260pt));
+  grid-template-rows: repeat(2, minmax(100pt, 280pt));
   grid-template-areas:
     "header header header"
     "main main main";
@@ -52,7 +52,7 @@ main {
 
 .main-container {
   display: grid;
-  grid-template-columns: 260pt 260pt 260pt;
+  grid-template-columns: repeat(3, minmax(100pt, 260pt));
   grid-template-areas: "sec1 sec2 sec3";
 }
 
@@ -89,21 +89,23 @@ p {
   background-color: rgb(43, 205, 192);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .container {
     display: grid;
-    grid-template-columns: 400pt;
+    grid-template-columns: minmax(100pt, 400pt);
     grid-template-rows: 310pt 280pt 280pt 280pt;
     grid-template-areas:
       "header"
       "main"
       "main"
       "main";
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .main-container {
     display: grid;
-    grid-template-columns: 400pt;
+    grid-template-columns: minmax(100pt, 400pt);
     grid-template-rows: 280pt 280pt 280pt;
     grid-template-areas:
       "sec1"
